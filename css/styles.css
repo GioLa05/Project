@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+}
+
+body {
+  margin: 0;
+  background-color: #080a0b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 125px;
+  background-color: #111111;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons {
+  text-align: right;
+  display: flex;
+  gap: 61px;
+}
+
+.nav-buttons a {
+  color: #848484;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.monaspa-logo {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  top: 25px;
+}
+
+.dropbtn {
+  background-color: #111111;
+  color: #fff;
+  padding: 1px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 50px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.line {
+  width: 0px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+
+.parent-line {
+  display: flex;
+}
+
+.parent--dropdown {
+  display: flex;
+  gap: 11px;
+}
+
+.parent-dropdown-line {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.coin-photo {
+  display: flex;
+}
+
+.all-together {
+  display: flex;
+  gap: 32px;
+  margin-right: 36px;
+}
