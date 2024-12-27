@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-* {
-  font-family: "Poppins", serif;
-}
-
 body {
   margin: 0;
   background-color: #080a0b;
@@ -13,6 +9,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Poppins", serif;
 }
 
 header {
@@ -244,9 +241,23 @@ header {
   font-size: 24px;
 }
 
+.matches-results-news-combined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .matches-results-news {
+  width: 1240px;
   display: flex;
   justify-content: flex-start;
+}
+
+.all-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .parent-container {
@@ -263,7 +274,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+}
+
+.inside-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1192px;
 }
 
 .total-score {
@@ -273,11 +290,66 @@ header {
   font-style: normal;
 }
 
-.score {
+.center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-/* i want to scale font size to 20px down there */
+.score {
+  display: flex;
+  font-size: 20px;
+}
+
+.info-description {
+  width: 84px;
+  height: 70px;
+}
+
+p {
+  margin: 0;
+}
+
+.dota {
+  font-size: 40px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.date {
+  font-size: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #6f787b;
+}
+
+.time {
+  font-size: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #6f787b;
+}
+
+.date-time {
+  display: flex;
+  gap: 8px;
+}
+
+.epl {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.parent-epl {
+  display: flex;
+}
 
 .first-number {
   color: #ed1027;
@@ -296,6 +368,96 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 16px;
+}
+
+.all-container-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 67px;
+}
+
+.container-mobile {
+  display: none;
+}
+
+footer {
+  height: 243px;
+  width: 100%;
+  background-color: #171b1c;
+}
+
+.logo-copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-top-text {
+  font-size: 12px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+}
+
+.footer-bottom-text {
+  font-size: 12px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3db3a2;
+}
+
+.right-text {
+  width: 306px;
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+}
+
+.footer-tel {
+  color: #e93830;
+}
+
+.footer-mail {
+  color: #e93830;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.socials-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.socials-footer-text {
+  display: flex;
+}
+
+.all-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .matches-results-news-combined {
+    transform: scale(0.7);
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -337,5 +499,145 @@ header {
     width: 164px;
     height: 100%;
     object-fit: cover;
+  }
+
+  .matches-results-news {
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .matches-results-news-combined {
+    margin: 16px;
+  }
+
+  .matches,
+  .results,
+  .news {
+    margin-top: 62px;
+  }
+
+  .container {
+    height: 96px;
+    width: 100%;
+  }
+
+  .parent-container {
+    margin-inline: 16px;
+  }
+
+  .score {
+    font-size: 16px;
+  }
+
+  .container-logo {
+    font-size: 12px;
+  }
+
+  .container-logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .dota {
+    font-size: 20px;
+  }
+
+  .all-container {
+    display: none;
+  }
+
+  .container-mobile {
+    height: 96px;
+    max-width: 1240px;
+    background-color: #1d2224;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .info-description-mobile {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .date-time-mobile {
+    display: flex;
+    gap: 8px;
+  }
+
+  .parent-epl-mobile {
+    margin-left: auto;
+    font-size: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+  }
+
+  .dota-mobile {
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+
+  .monaspa-logo-left,
+  .monaspa-logo-right {
+    color: #fff;
+  }
+
+  .date-mobile,
+  .time-mobile {
+    font-size: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #6f787b;
+  }
+
+  .center-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .container-logo-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  footer {
+    height: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .all-footer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .right-text {
+    text-align: center;
+    font-size: 12px;
   }
 }
